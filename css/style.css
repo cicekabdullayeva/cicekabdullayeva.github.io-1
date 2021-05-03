@@ -1,0 +1,298 @@
+/*Geneleral styles*/
+ p{
+	font-size: 14px;
+}
+h3{
+	font-size: 18px;
+	font-weight: 400;
+}
+h2{
+	font-size: 32px;
+	color: #1886C7;
+	text-transform: uppercase;
+
+}
+/*HOME SECTION*/
+.navbar{
+	border-bottom: #1886C7 1px solid;
+}
+.navbar .navbar-brand{
+	color: #1886C7;
+	font-size: 24px;
+	cursor: text;
+}
+.navbar .navbar-brand:hover {
+	color: #1886C7 !important;
+}
+.nav-item .nav-link{
+	color: white !important;
+	text-transform: uppercase ;
+}
+.nav-item .nav-link:hover {
+	color: #1886C7 !important;
+	transition: color .5s ease;
+}
+/*HEADER SECTION*/
+
+#headerSection{
+	background: url("../images/bg.jpg") no-repeat center center fixed;
+	background-size: cover;
+	height: 100vh;	
+}
+#headerSection .overlay{
+	background-color: rgba(0 ,0 ,0 , .7 );
+}
+#headerSection .row{
+	height: 100vh;
+}
+#headerSection span {
+	color: #1886C7 !important;
+}
+.btn-outline-primary{
+	padding-right: 30px;
+	padding-left: 30px;
+	border-radius: 0;
+	cursor: pointer;
+}
+/*FEATURA SECTION */
+#featureSection .fa , #featureSection .fab{
+	font-size: 40px
+}
+#featureSection .feature-top:hover{
+	color: #1886C7
+}
+/*History section*/
+#ourHistory h2{
+	border-left: 6px solid #1886C7;
+	padding-left: 30px;
+
+}
+#ourHistory .col-md-6{
+	display: inline;
+}
+#ourHistory .btn-outline-primary{
+	position: absolute;
+	bottom: 0px;
+}
+#ourHistory p{
+	line-height: 28px;
+}
+#ourHistory img{
+	/*height: 400px;*/
+	width: 500px;
+}
+/*TEAM SECTION*/
+#team img{
+	height: 150px;
+	width: 150px;
+}
+#team .fab{
+	font-size: 24px
+}
+#team .card{
+	border: none;
+	cursor: pointer;
+	transition: all 0.5 ease;
+	opacity: 0.8
+}
+#team .card:hover{
+   opacity: 1
+}
+/*WHAT WE DO SECTION*/
+#whatWeDo .far{
+	font-size: 50px
+}
+#whatWeDo{
+	background: linear-gradient(
+		rgba(0 ,0 ,0 ,0.7) , rgba(0 ,0 ,0 ,0.7)
+		) , url(../images/code.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+ /*CASE STUDY SECTION*/
+ #caseStudy {
+ 	background-color: #f4f5f9;
+ 	line-height: 28px;
+ }
+ .caseArea{
+ 	background-color: white;
+ 	margin-top: 40px;
+ 	margin-right: -40px;
+ 	z-index: 100;
+ 	position: relative;
+ 	min-height: 420px;
+ 	padding: 40px;
+ }
+ .caseArea h3{
+ 	margin-top:40px;
+ 	margin-bottom: 40px;
+ 	font-size: 19px;
+ 	color:#1886C7;
+ }
+
+ #caseStudy .fas{
+ 	font-size: 40px;
+ 	color:#1886C7;
+ }
+
+ #caseStudy img{
+ 	width: 45+0px;
+ 	height: 500px
+}
+.caseImg{
+	margin-left: -40px
+}
+/*PORTFOLIO SECTION*/
+#portfolio .col-md-3 {
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+} 
+#portfolio h4{
+	font-size: 16px;
+	font-weight:300;
+}
+#portfolio .fas{
+	font-size: 24px;
+	margin-bottom: 20px
+}
+#portfolio p{
+	font-size: 14px;
+	font-weight: 300;
+}
+.imageContainer{
+	position: relative;
+	cursor: pointer;
+}
+.imgOverlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background-color:#1886C7;
+	opacity: 0;
+	transition: .8s ease
+}
+.imageContainer:hover .imgOverlay{
+	opacity: 0.8
+}
+#portfolio .imgText{
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+
+}
+ /*Slide section*/
+ #slidesection{
+ 	background: linear-gradient(rgba(0,0,0, .7),rgba(0,0,0, .7)),
+ 	url(../images/slidebg1.jpg);
+ 	background-position: top;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	position: relative;
+ }
+ .quote{
+ 	color: rgba(24 ,134,199, .6);
+ 	margin-bottom: 30px
+ }
+ .carousel-item img {
+ 	opacity: 0.2
+ }
+ .blockquote p{
+ 	font-size: 20px; 	
+ }
+ .blockquote-footer{
+ 	color: #1886c7
+ }
+ /*CONTACT SECTION*/
+#contactSection{
+ background-color: #f4f5f9
+}
+.input-group-text{
+	width: 40px;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	background-color: #1886c7;
+	color:white;
+}
+/*FOOTER SECTION*/
+
+#footerSection{
+	color: #fff;
+	background-color:#343A40;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1200px){
+	#ourHistory p{
+		line-height:20px
+	}
+
+}
+@media screen and (max-width: 992px){
+	.display-3{
+		font-size: 48px
+	}
+	#ourHistory .btn{
+		position: relative;
+	}
+	 #ourHistory .historyLeft ,  #ourHistory .historyRight{
+	 	text-align: center;
+	 }
+	 #ourHistory  h2{
+	 	border-left: 0px ;
+	 	padding-left: 0px;
+	 	padding-top: 10px;
+	 }
+	  #ourHistory  .mb-5{
+	  	margin-bottom: 38px !important;
+	  }
+}
+@media screen and (max-width: 768px){
+	.display-3 {
+		font-size: 36px;
+	}
+	#caseStudy .caseArea{
+		margin-right: 0;
+	}
+	#caseStudy .caseImg{
+		margin-left: 0;
+		text-align: center;
+	}
+
+}
+/*@media screen and (max-width: 645px){
+ 	.navbar{
+ 		position: relative;
+ 	}
+}*/
+@media screen and (max-width: 576px){
+	.display-3 {
+		font-size: 28px
+	}
+	#contactSection h2{
+		font-size: 28px;
+		text-align: center;
+	}
+	#contactSection h4{
+		font-size: 22px
+	}
+	#contactSection  .row{
+		text-align: center
+	}
+	#contactSection .d-flex{
+		justify-content: center;
+	}
+}
+
+
+
+
